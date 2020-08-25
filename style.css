@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.game td {
+    table-layout: fixed;
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: solid 5px black;
+    text-align: center;
+    font-size: 40pt;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.game td:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/** Parent **/
+.game {
+    background: #efefef;
+    border: solid 10px #333;
+}
+
+.game-board {
+    display:flex;
+}
+
+.game .player {
+    /* float: left;
+    text-align: center;
+    width: 25%; */
+    flex:1;
+    text-align:center;
+    padding-top:15px;
+}
+
+.game .game-title {
+    background: #222;
+    color: #fff;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.game .player .selected {
+    border-bottom: solid 4px #3ef389;
+    /* margin:0 20px; */
+}
+/* Not Exist?
+.board {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.board table {
+    float: left;
+    width: 50%;
+}
+
+.board-score1 {
+    float: left;
+    width: 20%;
+}
+
+.board-score2 {
+    float: left;
+    width: 20%;
+} */
+
+.clear {
+    clear: both;
+}
+
+.black-dot {
+    height: 25px;
+    width: 25px;
+    background: black;
+    display: block;
+    border-radius: 50%;
+    /* text-align: center; */
+    margin: auto;
+}
+
+.red-dot {
+    height: 25px;
+    width: 25px;
+    background: red;
+    display: block;
+    border-radius: 50%;
+    /* text-align: center; */
+    margin: auto;
+}
